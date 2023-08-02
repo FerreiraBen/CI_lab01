@@ -1,7 +1,7 @@
-name: Hello World Workflow
+name: Hello Flow Scheduled
 on:
   schedule:
-    - cron: '* * * * *'  # Executa a cada 1 minuto
+    - cron: '* * * * *' # Alterado para rodar a cada minuto
 jobs:
   first-job:
     runs-on: ubuntu-latest
