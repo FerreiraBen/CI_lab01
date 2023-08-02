@@ -3,17 +3,10 @@ on:
   schedule:
     - cron: '* * * * *'  # Executa a cada 1 minuto
 jobs:
-  hello-world-job:
+  first-job:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v2
-
-      - name: Print Hello World
-        run: echo "Hello World"
-      
-      - name: Wait for 1 minute
-        run: sleep 60
-      
-      - name: Print Valeu - bye
-        run: echo "Valeu - bye"
+      - name: Diga oi
+        run: echo "Hello World!"
+      - name: Diga valeu
+        run: echo "Valeu - bye!"
