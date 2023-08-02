@@ -1,5 +1,7 @@
 name: Hello Flow
-on: workflow_dispatch
+on:
+  schedule:
+    - cron: '*/5 * * * *' # Alterado para rodar a cada 2 minutos
 jobs:
   first-job:
     runs-on: ubuntu-latest
