@@ -1,7 +1,7 @@
 name: Hello Flow Scheduled
 on:
   schedule:
-    - cron: '* * * * *' # Alterado para rodar a cada minuto
+    - cron: '*/1 * * * *' # Alterado para rodar a cada minuto
 jobs:
   first-job:
     runs-on: ubuntu-latest
