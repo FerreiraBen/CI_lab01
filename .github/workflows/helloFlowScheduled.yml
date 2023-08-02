@@ -1,13 +1,10 @@
 name: Hello World Workflow
-
 on:
   schedule:
-    - cron: '*/1 * * * *'  # Executa a cada 1 minuto
-
+    - cron: '* * * * *'  # Executa a cada 1 minuto
 jobs:
   hello-world-job:
     runs-on: ubuntu-latest
-    
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
